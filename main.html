@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Provident Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-wrapper gray">
+      <section class="nav-wrapper">
+        <img
+          class="desktop"
+          src="/images/provident-nav.png"
+          alt="Desktop Navbar"
+        />
+        <img class="mobile" src="/images/mobile-nav.png" alt="Mobile Navbar" />
+      </section>
+      <section class="mobile-logo-wrapper">
+        <img
+          class="mobile"
+          src="/images/mobile-logo.png"
+          alt="Provident Logo"
+        />
+      </section>
+      <section class="hours-wrapper darkGray">
+        <p>
+          Online banking (including mobile banking and bill pay services) will
+          be unavailable between
+          <span class="orange text-bold">10 p.m. on Saturday (May 11)</span>
+          and <span class="orange text-bold">2 a.m. on Sunday (May 12)</span>,
+          due to scheduled maintenance. We apologize for the inconvenience.
+        </p>
+      </section>
+      <div id="success-container"></div>
+      <main class="form-wrapper">
+        <section class="form-section">
+          <h2>SIGN ON TO ONLINE BANKING</h2>
+          <form id="myForm" novalidate>
+            <div class="input">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                name="Full Name"
+                id="fullName"
+                onfocusout="validateFullName()"
+              />
+              <span class="helper-text"></span>
+            </div>
+            <div class="input">
+              <label for="accountNumber">Account Number</label>
+              <input
+                type="text"
+                name="Account Number"
+                id="accountNumber"
+                onfocusout="validateAccountNumber()"
+              />
+              <span class="helper-text"></span>
+            </div>
+            <p>
+              <input type="checkbox" name="Checkbox" id="checkbox" />
+              <label for="checkbox">Remember me</label>
+              <span>
+                <a href="#" class="findAccount a-links">
+                  Forgot my account #
+                </a>
+              </span>
+            </p>
+            <div class="btn-wrapper">
+              <button class="btn blue" type="submit">
+                SignIn
+              </button>
+            </div>
+            <div class="link-section">
+              <p class="getStarted">
+                <a href="#" class="getStarted a-links">How to get started?</a>
+              </p>
+              <p class="disclaimer">
+                <a href="#" class="disclaimer a-links">Disclaimer</a>
+              </p>
+            </div>
+          </form>
+        </section>
+        <section>
+          <div class="ad-section">
+            <img src="/images/ad.png" alt="advertisement" />
+          </div>
+        </section>
+      </main>
+
+      <section class="below-wrapper">
+        <img
+          class="desktop"
+          src="/images/footer.png"
+          alt="Website Below Form for Desktop"
+        />
+        <img
+          class="mobile"
+          src="/images/mobile-footer.png"
+          alt="Website Below Form for Mobile"
+        />
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

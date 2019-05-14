@@ -1,0 +1,591 @@
+/*//////// Reset /////////// */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ‘’;
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+/* Basic */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+* :before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ///////////////////////////////////////////////// */
+/* //////////// H AND P TAGS //////////////////////  */
+/* ///////////////////////////////////////////////// */
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #515151;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* ///////////////////////////////////////////////// */
+/* //////////// FONTS //////////////////////////////  */
+/* ///////////////////////////////////////////////// */
+@font-face {
+  font-family: 'helveticaneuebold';
+  src: url('fonts/helvetica_neu_bold.woff2') format('woff2'),
+    url('fonts/helvetica_neu_bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticaneuelight';
+  src: url('fonts/helveticaneue_light.woff2') format('woff2'),
+    url('fonts/helveticaneue_light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticaneueregular';
+  src: url('fonts/helveticaneue.woff2') format('woff2'),
+    url('fonts/helveticaneue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ///////////////////////////////////////////////// */
+/* //////////// COLORS ////////////////////////////  */
+/* ///////////////////////////////////////////////// */
+.orange {
+  color: #f6851b;
+}
+
+.gray {
+  background-color: #e8e8e8;
+}
+
+.darkGray {
+  background-color: #515151;
+}
+
+.blue {
+  background-color: #55c3d8;
+}
+
+.lightBlue {
+  background-color: #b0e4ee;
+}
+
+/* DESKTOP VS MOBILE SCREEN  */
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+/* ////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////// */
+/* //////////// ELEMENTS //////////////////////////  */
+/* ///////////////////////////////////////////////// */
+body {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+
+  background-image: -webkit-radial-gradient(transparent 60%, rgba(0, 0, 0, 0.5)),
+    -webkit-radial-gradient(0% 0%, circle, rgba(191, 191, 191, 0) 8.6%, #b6b6b6
+          9.1%, #b6b6b6 13%, rgba(191, 191, 191, 0) 13%, rgba(191, 191, 191, 0)
+          17%, #b6b6b6 17%, #b6b6b6 22%, rgba(191, 191, 191, 0) 22%, rgba(
+            191,
+            191,
+            191,
+            0
+          )
+          26%, #b6b6b6 26%, #b6b6b6 31%, rgba(191, 191, 191, 0) 31%),
+    -webkit-radial-gradient(100% 100%, circle, rgba(191, 191, 191, 0) 8.6%, #b6b6b6
+          9.1%, #b6b6b6 13%, rgba(191, 191, 191, 0) 13%, rgba(191, 191, 191, 0)
+          17%, #b6b6b6 17%, #b6b6b6 22%, rgba(191, 191, 191, 0) 22%, rgba(
+            191,
+            191,
+            191,
+            0
+          )
+          26%, #b6b6b6 26%, #b6b6b6 31%, rgba(191, 191, 191, 0) 31%),
+    -webkit-radial-gradient(100% 0%, circle, rgba(191, 191, 191, 0) 8.6%, #b6b6b6
+          9.1%, #b6b6b6 13%, rgba(191, 191, 191, 0) 13%, rgba(191, 191, 191, 0)
+          17%, #b6b6b6 17%, #b6b6b6 22%, rgba(191, 191, 191, 0) 22%, rgba(
+            191,
+            191,
+            191,
+            0
+          )
+          26%, #b6b6b6 26%, #b6b6b6 31%, rgba(191, 191, 191, 0) 31%),
+    -webkit-radial-gradient(0% 100%, circle, rgba(191, 191, 191, 0) 8.6%, #b6b6b6
+          9.1%, #b6b6b6 13%, rgba(191, 191, 191, 0) 13%, rgba(191, 191, 191, 0)
+          17%, #b6b6b6 17%, #b6b6b6 22%, rgba(191, 191, 191, 0) 22%, rgba(
+            191,
+            191,
+            191,
+            0
+          )
+          26%, #b6b6b6 26%, #b6b6b6 31%, rgba(191, 191, 191, 0) 31%);
+
+  background-color: #bfbfbf;
+
+  -webkit-background-size: 100%, 51px 51px, 51px 51px, 51px 51px, 51px 51px;
+  -moz-background-size: 100%, 51px 51px, 51px 51px, 51px 51px, 51px 51px;
+  background-size: 100%, 51px 51px, 51px 51px, 51px 51px, 51px 51px;
+  background-position: 0 0, 0 0, 41px 41px, 16px 26px, 26px 16px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 3px 12px 0px black;
+}
+
+.nav-wrapper img {
+  width: 100%;
+}
+
+.mobile-logo-wrapper img {
+  width: 100%;
+}
+
+.hours-wrapper {
+  color: white;
+  padding: 10px 30px;
+}
+
+.hours-wrapper span {
+  font-weight: bold;
+}
+
+#success-container {
+  display: none;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  /* margin: 15px; */
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+}
+
+.ad-section {
+  height: 100%;
+}
+
+.ad-section img {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  width: 80%;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  padding-bottom: 5px;
+}
+
+label[for='accountNumber'] {
+  margin-top: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #585858;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 1px inset;
+}
+
+input[name='Account Number'] {
+  margin-bottom: 3px;
+}
+
+.helper-text {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.btn-wrapper {
+  text-align: right;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  height: 40px;
+  width: 70px;
+  background-color: #55c3d8;
+  border-radius: 4px;
+  margin-top: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 1px 1px;
+  /* transition: 0.3s; */
+}
+
+.btn:hover {
+  color: white;
+  background-color: #2f2f2f;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.a-links {
+  color: #515151;
+  /* text-decoration: none; */
+  font-size: 12px;
+}
+
+.a-links:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.findAccount {
+  margin-left: 15px;
+}
+
+.below-wrapper img {
+  width: 100%;
+}
+/* //////////////////////////////////////////////////////////// */
+/* /////////////////// REMEMBER ME CHECKBOX /////////////////// */
+/* //////////////////////////////////////////////////////////// */
+/* Basic styles */
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label[for='checkbox'] {
+  font-size: 12px;
+  font-weight: lighter;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 2em;
+  height: 1.5em;
+  line-height: 1.5;
+  cursor: pointer;
+}
+label[for='checkbox']::before,
+label[for='checkbox']::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+}
+label[for='checkbox']::before {
+  content: ' ';
+  border: 2px solid #bdc3c7;
+  border-radius: 4px;
+}
+/* Checkbox */
+input[type='checkbox'] + label::after {
+  content: '\2714';
+  color: #2c3e50;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* :checked */
+input[type='checkbox']:checked + label::before {
+  background: #fff;
+  border-color: #fff;
+}
+input[type='checkbox'] + label::after {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+input[type='checkbox']:checked + label::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* Transition */
+label[for='checkbox']::before,
+label[for='checkbox']::after {
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* /////////////////////////////////// */
+
+.link-section {
+  padding: 8px;
+  margin: 5px auto;
+}
+
+.getStarted {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .main-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-section {
+    margin: 8px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .btn {
+    font-size: 14px;
+    height: 28px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .hours-wrapper p {
+    font-size: 12px;
+  }
+
+  .form-wrapper {
+    display: block;
+  }
+
+  .helper-text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ad-section {
+    display: none;
+  }
+}
+
+/* //////////// MOBILE STYLING //////////// */
+@media screen and (max-width: 380px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .findAccount {
+    margin-left: 10px;
+  }
+}
+/* ////////////////////////////////////////////// */
